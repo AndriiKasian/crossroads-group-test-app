@@ -14,3 +14,9 @@ run application
 
 run unit tests
 `$ npm run test`
+
+### Future
+- add styles to components
+- add custom hook to prevent memory leaks for side effects
+- add loader to the commit list
+- add .eslintrc.js

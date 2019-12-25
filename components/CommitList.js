@@ -30,6 +30,7 @@ const CommitList = () => {
                     url={url}
                 />
             ))}
+            {!list.length && <p>There is no commits to show</p>}
         </div>
     )
 };
