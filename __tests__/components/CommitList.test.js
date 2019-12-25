@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer'
 import { shallow, mount } from 'enzyme'
 import { act } from 'react-dom/test-utils';
 
-import CommitList from '../../../components/CommitList'
-import * as gitHubService from '../../../services/gitHubService'
+import CommitList from '../../components/CommitList'
+import * as gitHubService from '../../services/gitHubService'
 
 describe('CommitList component', () => {
     it('should render with empty props', () => {
