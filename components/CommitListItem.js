@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 const CommitListItem = ({ committer, date, message, url }) => {
     const handleView = () => {
-        // TODO redirect to the selected github commit page
+        window.open(url, "_blank");
     };
 
     const getFormattedDate = date => new Date(date).toLocaleString();
