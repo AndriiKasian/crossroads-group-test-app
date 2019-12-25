@@ -3,10 +3,20 @@ import get from 'lodash.get';
 
 import CommitListItem from "./CommitListItem";
 
+import { getCommits } from '../services/gitHubService';
+
 const CommitList = () => {
     const [list, setList] = useState([]);
 
+    const loadCommitList = async () => {
+        const res = await getCommits();
+        const data = get(res, 'data') || [];
+
+        setList(data)
+    }
+
     useEffect(() => {
+        loadCommitList()
     }, []);
 
     return (
