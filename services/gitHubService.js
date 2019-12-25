@@ -7,3 +7,7 @@ import axios from '../utils/API';
 export const getCommits = () => {
     return axios.get('/commits');
 };
+
+export default {
+    getCommits
+}
